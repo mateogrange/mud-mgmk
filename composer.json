@@ -1,0 +1,17 @@
+{
+    "name": "mateo/mud-mgmk",
+    "autoload": {
+        "psr-4": {
+            "Mateo\\MudMgmk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matéo Grange",
+            "email": "grange.mateo45@gmail.com"
+        }
+    ],
+    "require": {
+        "jugid/staurie": "^1.1"
+    }
+}
