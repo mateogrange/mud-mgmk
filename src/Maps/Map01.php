@@ -5,6 +5,8 @@ namespace MudMgmk\Mud\Maps;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use MudMgmk\Mud\Items\Demon_Sword;
+use MudMgmk\Mud\Monsters\Nashor;
+use MudMgmk\Mud\Monsters\Scuttle;
 
 class Map01 extends Blueprint {
 
@@ -36,6 +38,6 @@ class Map01 extends Blueprint {
   }
 
   public function monsters() : array {
-      return [];
+      return [ new Scuttle()];
   }
 }
