@@ -2,7 +2,8 @@
     "name": "mateo/mud-mgmk",
     "autoload": {
         "psr-4": {
-            "Mateo\\MudMgmk\\": "src/"
+            "MudMgmk\\Mud\\": "src/",
+            "MudMgmk\\Mud\\Vendor\\": "vendor/"
         }
     },
     "authors": [
@@ -12,6 +13,7 @@
         }
     ],
     "require": {
-        "jugid/staurie": "^1.1"
+        "jugid/staurie": "^1.1",
+        "symfony/finder": "^6.0"
     }
 }
