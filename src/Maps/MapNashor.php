@@ -4,21 +4,20 @@ namespace MudMgmk\Mud\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use MudMgmk\Mud\Npcs\Garen;
-use MudMgmk\Mud\Npcs\Ornn;
+use MudMgmk\Mud\Monsters\Nashor;
 
-class Map01 extends Blueprint
+class MapNashor extends Blueprint
 {
     private Position $position;
 
     public function __construct()
     {
-        $this->position = new Position(0, 0);
+        $this->position = new Position(9, 5);
     }
 
     public function name(): string
     {
-        return 'Test map';
+        return 'Nashor';
     }
 
     public function description(): string
@@ -33,7 +32,7 @@ class Map01 extends Blueprint
 
     public function npcs(): array
     {
-        return [new Ornn(), new Garen()];
+        return [];
     }
     public function items(): array
     {
@@ -42,6 +41,6 @@ class Map01 extends Blueprint
 
     public function monsters(): array
     {
-        return [];
+        return [new Nashor()];
     }
 }

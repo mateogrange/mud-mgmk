@@ -4,21 +4,20 @@ namespace MudMgmk\Mud\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use MudMgmk\Mud\Npcs\Garen;
-use MudMgmk\Mud\Npcs\Ornn;
+use MudMgmk\Mud\Npcs\Brolaf;
 
-class Map01 extends Blueprint
+class Map12 extends Blueprint
 {
     private Position $position;
 
     public function __construct()
     {
-        $this->position = new Position(0, 0);
+        $this->position = new Position(5, 4);
     }
 
     public function name(): string
     {
-        return 'Test map';
+        return 'Path11';
     }
 
     public function description(): string
@@ -33,7 +32,7 @@ class Map01 extends Blueprint
 
     public function npcs(): array
     {
-        return [new Ornn(), new Garen()];
+        return [new Brolaf()];
     }
     public function items(): array
     {
