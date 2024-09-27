@@ -22,8 +22,8 @@ class BFSword extends Item_Equippable {
     public function statistics(): array
     {
         return [
-            'chance'=> 1,
-            'attack'=> 10
+            'attack'=> 10,
+            'chance'=> 1
         ];
     }
 }
