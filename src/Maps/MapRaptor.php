@@ -8,6 +8,7 @@ use MudMgmk\Mud\Items\Demon_Sword;
 use MudMgmk\Mud\Npcs\Garen;
 use MudMgmk\Mud\Npcs\Ornn;
 use MudMgmk\Mud\Monsters\Nashor;
+use MudMgmk\Mud\Monsters\Raptor;
 use MudMgmk\Mud\Monsters\Scuttle;
 
 class MapRaptor extends Blueprint
@@ -36,15 +37,15 @@ class MapRaptor extends Blueprint
 
     public function npcs(): array
     {
-        return [new Ornn(), new Garen()];
+        return [];
     }
     public function items(): array
     {
-        return [new Demon_Sword()];
+        return [];
     }
 
     public function monsters(): array
     {
-        return [new Scuttle()];
+        return [new Raptor()];
     }
 }

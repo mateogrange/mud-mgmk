@@ -5,23 +5,25 @@ namespace MudMgmk\Mud\Maps;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use MudMgmk\Mud\Items\Demon_Sword;
+use MudMgmk\Mud\Monsters\Krug;
 use MudMgmk\Mud\Npcs\Garen;
 use MudMgmk\Mud\Npcs\Ornn;
 use MudMgmk\Mud\Monsters\Nashor;
+use MudMgmk\Mud\Monsters\Raptor;
 use MudMgmk\Mud\Monsters\Scuttle;
 
-class Map02 extends Blueprint
+class MapKrug extends Blueprint
 {
     private Position $position;
 
     public function __construct()
     {
-        $this->position = new Position(1, 0);
+        $this->position = new Position(4, 4);
     }
 
     public function name(): string
     {
-        return 'Path1';
+        return 'Krug';
     }
 
     public function description(): string
@@ -45,6 +47,6 @@ class Map02 extends Blueprint
 
     public function monsters(): array
     {
-        return [];
+        return [new Krug()];
     }
 }

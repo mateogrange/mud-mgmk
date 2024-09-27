@@ -40,11 +40,11 @@ class Map01 extends Blueprint
     }
     public function items(): array
     {
-        return [new Demon_Sword()];
+        return [];
     }
 
     public function monsters(): array
     {
-        return [new Scuttle()];
+        return [];
     }
 }
