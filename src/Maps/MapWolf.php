@@ -9,19 +9,20 @@ use MudMgmk\Mud\Npcs\Garen;
 use MudMgmk\Mud\Npcs\Ornn;
 use MudMgmk\Mud\Monsters\Nashor;
 use MudMgmk\Mud\Monsters\Scuttle;
+use MudMgmk\Mud\Monsters\Wolf;
 
-class Map20 extends Blueprint
+class MapWolf extends Blueprint
 {
   private Position $position;
 
   public function __construct()
   {
-    $this->position = new Position(9, 4);
+    $this->position = new Position(7, 2);
   }
 
   public function name(): string
   {
-    return 'path19';
+    return 'Wolf';
   }
 
   public function description(): string
@@ -45,6 +46,6 @@ class Map20 extends Blueprint
 
   public function monsters(): array
   {
-    return [];
+    return [new Wolf()];
   }
 }

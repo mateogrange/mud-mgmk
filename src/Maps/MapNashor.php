@@ -36,15 +36,15 @@ class MapNashor extends Blueprint
 
     public function npcs(): array
     {
-        return [new Ornn(), new Garen()];
+        return [];
     }
     public function items(): array
     {
-        return [new Demon_Sword()];
+        return [];
     }
 
     public function monsters(): array
     {
-        return [new Scuttle()];
+        return [new Nashor()];
     }
 }
