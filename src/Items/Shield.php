@@ -4,26 +4,25 @@ namespace MudMgmk\Mud\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Demon_Sword extends Item_Equippable {
+class Shield extends Item_Equippable {
 
     public function name() : string {
-        return 'Demon Sword';
+        return 'Shield';
     }
 
     public function description(): string
     {
-        return 'A Fricking Demon Sword';
+        return 'A Basic Shield';
     }
 
     public function body_part(): string { 
-        return 'hand';
+        return 'shield';
     }
 
     public function statistics(): array
     {
         return [
-            'chance'=> 666,
-            'wisdom'=> 666
+            'defense'=> 10
         ];
     }
 }
