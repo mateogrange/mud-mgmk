@@ -24,14 +24,23 @@ $staurie->register([
   Combat::class
 ]);
 
+$container = $staurie->getContainer();
+
+$menu = $container->registerComponent(Menu::class);
+$menu->configuration([
+    'text'=> 'Welcome to DEMACIA !!!',
+    'labels'=> [
+        'new_game' => 'Enter the world',
+        'quit'=> 'Exit game',
+    ]
+]);
+
 $charStats = new Statistics();
 $charStats
   ->addDefault('health', default_value: 50)
   ->addDefault('attack', default_value: 0)
   ->addDefault('defense', default_value: 0)
   ->addDefault('chance', default_value: 0);
-
-$container = $staurie->getContainer();
 
 $character = $container->registerComponent(MainCharacter::class);
 $character->configuration([
@@ -54,6 +63,17 @@ $map->configuration([
     'navigation'=>true,
     'map_enable'=>true,
     'compass_enable'=>true
+]);
+
+$introduction = $container->registerComponent(Introduction::class);
+$introduction->configuration([
+    'text'=>[
+        'This is the adventure of Garen the great knight',
+        'You can fight for your honor',
+        'type help to see the commands'
+    ],
+    'title'=>'Chapter 1 : The Rift',
+    'scrolling'=>false
 ]);
 
 $staurie->run(); //LANCE LE JEU
