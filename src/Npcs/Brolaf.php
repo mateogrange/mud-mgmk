@@ -23,6 +23,6 @@ class Brolaf extends Npc
       Yo! Looking for some rocks to smash? Haha!
       There are Krugs nearby, big bags of rocks. You should go and smash them!
       Look at your compass or something... but you don\'t have to, can you smell it? That\'s the rock about to break, bro!
-      Come on, bro! Knock ‘em dead, and come back for a drink afterwards!'];
+      Come on, bro! Knock em dead, and come back for a drink afterwards!'];
   }
 }

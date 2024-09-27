@@ -3,6 +3,7 @@
 namespace  MudMgmk\Mud\Npcs;
 
 use Jugid\Staurie\Game\Npc;
+use MudMgmk\Mud\Items\Wood_Shield;
 
 class Garen extends Npc
 {
@@ -19,11 +20,9 @@ class Garen extends Npc
 
   public function speak(): string|array
   {
-    if ($this->playerHasItem('')) {
-      return ['Please, do not hurt me !', 'I\'m famous here, I can help you !'];
-    } else {
-      // $this->giveItem(new Shield());
-      return 'For Demacia';
+    if (true) {
+      $this->giveItem(new Wood_Shield());
+      return ['For Demacia'];
     }
   }
 }
