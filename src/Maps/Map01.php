@@ -7,10 +7,11 @@ use Jugid\Staurie\Game\Position\Position;
 use MudMgmk\Mud\Items\Demon_Sword;
 use MudMgmk\Mud\Npcs\Garen;
 use MudMgmk\Mud\Npcs\Ornn;
+use MudMgmk\Mud\Monsters\Nashor;
+use MudMgmk\Mud\Monsters\Scuttle;
 
 class Map01 extends Blueprint
 {
-
     private Position $position;
 
     public function __construct()
@@ -44,6 +45,6 @@ class Map01 extends Blueprint
 
     public function monsters(): array
     {
-        return [];
+        return [new Scuttle()];
     }
 }
