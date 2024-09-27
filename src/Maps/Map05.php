@@ -4,11 +4,7 @@ namespace MudMgmk\Mud\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use MudMgmk\Mud\Items\Demon_Sword;
-use MudMgmk\Mud\Npcs\Garen;
-use MudMgmk\Mud\Npcs\Ornn;
-use MudMgmk\Mud\Monsters\Nashor;
-use MudMgmk\Mud\Monsters\Scuttle;
+use MudMgmk\Mud\Npcs\Shaco;
 
 class Map05 extends Blueprint
 {
@@ -36,7 +32,7 @@ class Map05 extends Blueprint
 
     public function npcs(): array
     {
-        return [];
+        return [new Shaco()];
     }
     public function items(): array
     {

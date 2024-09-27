@@ -4,11 +4,6 @@ namespace MudMgmk\Mud\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use MudMgmk\Mud\Items\Demon_Sword;
-use MudMgmk\Mud\Npcs\Garen;
-use MudMgmk\Mud\Npcs\Ornn;
-use MudMgmk\Mud\Monsters\Nashor;
-use MudMgmk\Mud\Monsters\Scuttle;
 
 class Map11 extends Blueprint
 {
