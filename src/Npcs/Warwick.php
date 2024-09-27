@@ -3,7 +3,7 @@
 namespace  MudMgmk\Mud\Npcs;
 
 use Jugid\Staurie\Game\Npc;
-use MudMgmk\Mud\Items\Boots_of_Speed;
+use MudMgmk\Mud\Items\Boots;
 
 class Warwick extends Npc
 {
@@ -21,7 +21,7 @@ class Warwick extends Npc
   public function speak(): string|array
   {
     if ($this->playerHasItem('BFSword')) {
-      $this->giveItem(new Boots_of_Speed());
+      $this->giveItem(new Boots());
       return ['Sniff... sniff...
         I can smell them. The wolves. They\'re close...
         (He growls, his claws ready to pounce.)
