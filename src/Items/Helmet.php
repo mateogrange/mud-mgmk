@@ -4,25 +4,25 @@ namespace MudMgmk\Mud\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Boots_of_Speed extends Item_Equippable {
+class Helmet extends Item_Equippable {
 
     public function name() : string {
-        return 'Boots of Speed';
+        return 'Helmet';
     }
 
     public function description(): string
     {
-        return 'A Basic Pair of Boots';
+        return 'A Basic Helmet';
     }
 
     public function body_part(): string { 
-        return '';
+        return 'head';
     }
 
     public function statistics(): array
     {
         return [
-            'defense'=> 2,
+            'defense'=> 3,
             'chance'=> 1
         ];
     }

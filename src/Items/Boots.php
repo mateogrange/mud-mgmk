@@ -4,25 +4,25 @@ namespace MudMgmk\Mud\Items;
 
 use Jugid\Staurie\Game\Item_Equippable;
 
-class Logitec_Helmet extends Item_Equippable {
+class Boots extends Item_Equippable {
 
     public function name() : string {
-        return 'Logitec_Helmet';
+        return 'Boots';
     }
 
     public function description(): string
     {
-        return 'A Basic Logitec Helmet';
+        return 'A Basic Pair of Boots';
     }
 
     public function body_part(): string { 
-        return 'head';
+        return 'feet';
     }
 
     public function statistics(): array
     {
         return [
-            'defense'=> 3,
+            'defense'=> 2,
             'chance'=> 1
         ];
     }
