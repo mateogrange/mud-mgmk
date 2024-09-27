@@ -21,7 +21,7 @@ class Shaco extends Npc
   {
     return ['Hehehe... Can you smell that?
       There\'s a scuttle lurking nearby...
-      (Shaco disappears and suddenly reappears behind the player).
+      (Shaco disappears and suddenly reappears behind the you).
       Oh, don\'t worry, he\'s not as clever as me. But you\'d better take a look at your compass...
       It might lead you right to him. Hehehe...'];
   }
